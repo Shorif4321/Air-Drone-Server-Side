@@ -27,7 +27,7 @@ async function run() {
         const usersCollection = database.collection("users");
         const reviewCollection = database.collection("review");
 
-        // Post api
+        // Post Api
         app.post("/products", async (req, res) => {
             const drone = req.body;
             const result = await droneCollection.insertOne(drone);
